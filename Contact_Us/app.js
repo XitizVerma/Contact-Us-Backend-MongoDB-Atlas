@@ -15,6 +15,7 @@ mongoose.connect("mongodb+srv://Avacado:Avacado@cluster0.bu2ko.mongodb.net/testD
 });
 //create a new data schema
 const testSchema = {
+    name : String ,
     email : String ,
     number : Number ,
     description : String 
@@ -27,6 +28,7 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) { 
     let newNote = new Note ({
+         name : req.body.name,
          email : req.body.email,
          number : req.body.number, 
          description : req.body.description
@@ -35,6 +37,6 @@ app.post("/", function(req, res) {
         res.redirect('/');
 }); 
 
-app.listen(3000,function(){
-    console.log("Server is running on port 3000");
+app.listen(5000,function(){
+    console.log("Server is running on port 5000");
 })
