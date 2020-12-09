@@ -7,35 +7,131 @@
     <title>Contact Us</title> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel ="stylesheet" href="./styles.css">
+    
+    <style>
+        body  {background-color: #Eeedb9 ;             /* #573822';//#Eeedb9 */
+               color : rgb(0, 0, 0);
+               padding : 0px 50px 30px 50px;
+               font-size: 15px;}
+        header {text-align:center;}
+        h1     {color: rgb(0, 0, 0);
+                font-family:'Courier New', Courier, monospace ;
+                font-weight: bold;
+                font-size: 60px;  }
+        h4    {color: rgb(0, 0, 0);
+               font-style: italic;
+               font-family:Arial, Helvetica, sans-serif }
+  
+        .col-25
+        { 
+          float:left;
+          width :15%;
+        }
+        .d
+        {
+           padding: 10px;
+        }
+        .col-75
+        {
+          float:left;
+          font-family: Verdana;
+          
+        }
+        .row
+        { 
+           padding :10px;
+        }
+        
+        button
+        {
+            
+            width: 40%;
+            float:center;
+            background-color: rgb(0, 47, 255);
+            color: rgb(255, 255, 255); 
+            padding: 8px;
+            border-radius: 6px;
+            font-weight: bold;
+           ;
+        }
+        button:hover {
+            background-color: rgb(0, 29, 158);
+            border: 2px solid #000000;
+            box-shadow: 0 10px 10px 0 rgba(0,0,0,0.4);
+         }
+
+        input, textarea 
+        {
+           background-color:  #Eeedb9 ;
+           border: none;
+           padding: 4px;
+           
+        } 
+        .c
+        {  
+           padding: 10px;
+           width: 300px;
+           border-bottom:blue solid;
+        }
+    </style>
+
 </head> 
 
-<body style="background-color:hotpink; color:rgb(0, 0, 0)"> 
-   <div style="text-align:center;"> 
-    <h1>Contact Us</h1> 
+   <header > 
+      <img src="c.svg" style =" width:110px ; height:110px; float: left;">
+    <h1>Contact Avocado</h1> 
     <h4>Reach Us?<br>
        We would be happy to hear from you!<br>
     </h4>
-    </div>
-	<form action="/" method="post" target="#"> 
+    <br><br>
+   </header>
+
+	  <form class="form-inline" action="/" method="post" target="#"> 
         
-        <label for="name">Enter your name </label>
-        <input type="text" name="name" required><br><br>
+      <div class="row">
+        <div class="col-25">
+           <label class ="d" for="name">Name :</label>
+        </div>
+        <div class="col-75"></div>
+           <input class = "c" type="text" name="name" placeholder="Your Name" required>
+        </div>
+      </div>
 
-        <label for="email">Enter your email </label>
-        <input type="email" name="email" required><br><br>
+      <div class="row">
+        <div class="col-25">
+           <label class ="d" for="email">Email :</label>
+        </div>
+        <div class="col-75"></div>
+           <input  class = "c" type="email" name="email" placeholder="Your Email" required>
+        </div>
+      </div>
 
-        <label for="contact">Your Contact Number </label>
-        <input type="number" name="number" required><br><br>
+      <div class="row">
+        <div class="col-25">
+           <label class ="d" for="contact">Contact Number :</label>
+        </div>
+        <div class="col-75">
+           <input  class = "c" type="number" name="number" placeholder="Your Contact Number" required>
+        </div>
+      </div>
 
-		<label for="description">Your Subject/Topic   </label><br>
-        <textarea rows="10" cols="50" name="description" 
-            placeholder="Description of our Services you wanna use/avail" required ></textarea>	<br><br>
+      <div class="row">
+        <div class="col-25">
+           <label class ="d" for="description">Your Subject/Topic :</label><br>
+        </div>
+        <div class="col-75">
+        <textarea  class = "c" rows="5" name="description" 
+            placeholder="Description of our Services you wanna use/avail !" required ></textarea>
+        </div>
+      </div>
+      <br>
 
-		<button type="submit" style="color:red" name="submit"> 
-			Submit to Mongooose
-		</button> 
-    </form> 
-    
+		<button type="submit" name="submit"> 
+			      Submit to Mongooose
+      </button> 
+
+     </form> 
 </body> 
 
 </html> 
