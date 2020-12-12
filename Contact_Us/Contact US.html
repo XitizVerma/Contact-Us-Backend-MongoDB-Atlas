@@ -9,73 +9,6 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel ="stylesheet" href="./styles.css">
     
-    <style>
-        body  {background-color: #Eeedb9 ;             /* #573822';//#Eeedb9 */
-               color : rgb(0, 0, 0);
-               padding : 0px 50px 30px 50px;
-               font-size: 15px;}
-        header {text-align:center;}
-        h1     {color: rgb(0, 0, 0);
-                font-family:'Courier New', Courier, monospace ;
-                font-weight: bold;
-                font-size: 60px;  }
-        h4    {color: rgb(0, 0, 0);
-               font-style: italic;
-               font-family:Arial, Helvetica, sans-serif }
-  
-        .col-25
-        { 
-          float:left;
-          width :15%;
-        }
-        .d
-        {
-           padding: 10px;
-        }
-        .col-75
-        {
-          float:left;
-          font-family: Verdana;
-          
-        }
-        .row
-        { 
-           padding :10px;
-        }
-        
-        button
-        {
-            
-            width: 40%;
-            float:center;
-            background-color: rgb(0, 47, 255);
-            color: rgb(255, 255, 255); 
-            padding: 8px;
-            border-radius: 6px;
-            font-weight: bold;
-           ;
-        }
-        button:hover {
-            background-color: rgb(0, 29, 158);
-            border: 2px solid #000000;
-            box-shadow: 0 10px 10px 0 rgba(0,0,0,0.4);
-         }
-
-        input, textarea 
-        {
-           background-color:  #Eeedb9 ;
-           border: none;
-           padding: 4px;
-           
-        } 
-        .c
-        {  
-           padding: 10px;
-           width: 300px;
-           border-bottom:blue solid;
-        }
-    </style>
-
 </head> 
 
    <header > 
@@ -87,49 +20,50 @@
     <br><br>
    </header>
 
-	  <form class="form-inline" action="/" method="post" target="#"> 
+	  <form action="/" method="post" target="#"> 
         
       <div class="row">
         <div class="col-25">
-           <label class ="d" for="name">Name :</label>
+           <label class ="a" for="name">Name :</label>
         </div>
         <div class="col-75"></div>
-           <input class = "c" type="text" name="name" placeholder="Your Name" required>
+           <input class = "b" type="text" name="name" placeholder="Your Name" required>
         </div>
       </div>
 
       <div class="row">
         <div class="col-25">
-           <label class ="d" for="email">Email :</label>
+           <label class ="a" for="email">Email :</label>
         </div>
         <div class="col-75"></div>
-           <input  class = "c" type="email" name="email" placeholder="Your Email" required>
+           <input  class = "b" type="email" name="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+           <label class ="a" for="contact">Contact Number :</label>
+        </div>
+        <div class="col-75">
+           <input  class = "b" type="number" name="number" placeholder="Your Contact Number" required>
         </div>
       </div>
 
       <div class="row">
         <div class="col-25">
-           <label class ="d" for="contact">Contact Number :</label>
+           <label class ="a" for="description">Your Subject/Topic :</label><br>
         </div>
         <div class="col-75">
-           <input  class = "c" type="number" name="number" placeholder="Your Contact Number" required>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-25">
-           <label class ="d" for="description">Your Subject/Topic :</label><br>
-        </div>
-        <div class="col-75">
-        <textarea  class = "c" rows="5" name="description" 
+        <textarea  class = "b" rows="5" name="description" 
             placeholder="Description of our Services you wanna use/avail !" required ></textarea>
         </div>
       </div>
-      <br>
-
+      
+      <div>
 		<button type="submit" name="submit"> 
 			      Submit to Mongooose
       </button> 
+      </div>
 
      </form> 
 </body> 
